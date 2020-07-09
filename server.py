@@ -45,7 +45,7 @@ def email_to_client(user_name,user_email,user_subject,user_message):
     email['to'] = (user_email)
     email['subject'] = 'Confirmation email'
 
-    email.set_content(f' Dear {user_name}, \n  we have received your message re-{user_subject} \n\n  {user_message} \n\n We will be contacting you as soon as possible')
+    email.set_content(f' Dear {user_name}, \n  we have received your message re-{user_subject} \n\n  Message: \n{user_message} \n\n We will be contacting you as soon as possible')
     with smtplib.SMTP(host='smtp.gmail.com', port=587) as smtp:
         smtp.ehlo()
         smtp.starttls()
@@ -58,7 +58,7 @@ def email_to_server(user_name,user_email,user_subject,user_message):
     email['to'] = 'sandro.mizz@gmail.com'
     email['subject'] = 'Contact from mizzi19 site'
 
-    email.set_content(f' Message received from \n name:{user_name}, \n email:{user_email} \n subject:{user_subject} \n  message:{user_message} \n\n End of message')
+    email.set_content(f' Message received from \n name:{user_name} \n email:{user_email} \n subject:{user_subject} \n message:{user_message} \n\n End of message')
     with smtplib.SMTP(host='smtp.gmail.com', port=587) as smtp:
         smtp.ehlo()
         smtp.starttls()

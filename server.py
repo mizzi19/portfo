@@ -56,7 +56,7 @@ def email_to_server(user_name,user_email,user_subject,user_message):
     email = EmailMessage()
     email['from'] = 'mizzi19'
     email['to'] = 'sandro.mizz@gmail.com'
-    email['subject'] = 'Contact from mizzi19 site'
+    email['subject'] = 'Contact form mizzi19 site'
 
     email.set_content(f' Message received from \n name:{user_name} \n email:{user_email} \n subject:{user_subject} \n message:{user_message} \n\n End of message')
     with smtplib.SMTP(host='smtp.gmail.com', port=587) as smtp:

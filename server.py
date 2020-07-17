@@ -49,7 +49,7 @@ def email_to_client(user_name,user_email,user_subject,user_message):
     with smtplib.SMTP(host='smtp.gmail.com', port=587) as smtp:
         smtp.ehlo()
         smtp.starttls()
-        smtp.login('19m1221@gmail.com','XXXXXXX')
+        smtp.login('19m1221@gmail.com','XXXXXX')
         smtp.send_message(email)
 
 def email_to_server(user_name,user_email,user_subject,user_message):
@@ -62,7 +62,7 @@ def email_to_server(user_name,user_email,user_subject,user_message):
     with smtplib.SMTP(host='smtp.gmail.com', port=587) as smtp:
         smtp.ehlo()
         smtp.starttls()
-        smtp.login('19m1221@gmail.com','XXXXXXX')
+        smtp.login('19m1221@gmail.com','XXXXXX')
         smtp.send_message(email)
 
 

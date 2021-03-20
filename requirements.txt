@@ -2,7 +2,7 @@ beautifulsoup4==4.9.1
 click==7.1.2
 Flask==1.1.2
 itsdangerous==1.1.0
-Jinja2==2.11.2
+Jinja2==2.11.3
 MarkupSafe==1.1.1
 pyjokes==0.6.0
 soupsieve==2.0.1
